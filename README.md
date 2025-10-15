@@ -37,179 +37,82 @@ book.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Cover</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Cover</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+
+  .book-cover {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    background: linear-gradient(135deg, skyblue, pink);
+    border: 3px solid #000; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 40px 20px 20px 20px;
+    box-sizing: border-box;
+    text-align: center; 
+  }
+
+  .title {
+    font-size: 36px; 
+    font-weight: bold;
+    color: darkblue;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-size: 18px; 
+    color: darkblue;
+    margin-top: 10px;
+  }
+
+  .author {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: normal;
+    color: darkblue;
+  }
+
+  .photo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 120px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+</style>
 </head>
 <body>
-  <!-- Header text -->
-  <div class="student-info">PAVITHIRA.V (25017909)</div>
 
-  <!-- Book Cover -->
-  <div class="book-cover">
-    <div class="inner-border"></div>
+<div class="book-cover">
+  <div class="title">Future of Technology</div>
+  <div class="subtitle">A glimpse into tomorrow's technological landscape</div>
+  <div class="author">Pavithira</div>
+  <img src="pavi.jpg" alt="Book Photo" class="photo">
+</div>
 
-    <!-- Top content -->
-    <div>
-      <div class="section-top">SEC Insights</div>
-
-      <div class="title">
-       THE FUTURE <br>
-      ARTIFICIAL INTELLIGENCE
-      </div>
-
-      <div class="subtitle">
-         <br>
-        Top Seller of 2025
-      </div>
-    </div>
-
-    <!-- Bottom content -->
-    <div class="bottom">
-  <div class="bottom-content">
-        <div style="flex: 1;">
-          <div class="special">SPECIAL EDITION</div>
-          <div class="divider"></div>
-          <div class="author">V.PAVITHIRA</div>
-        </div>
-        <!-- Place your image file in the same folder as this HTML -->
-        <img src="pavi.jpg" alt="Author Photo" class="photo">
-      </div>
-      <div class="publisher">SEC</div>
-    </div>
-  </div>
 </body>
 </html>
-
-style.css
-
-body {
-      margin: 0;
-      padding: 0;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 90vh;
-      font-family: 'Times New Roman', serif;
-      color: white;
-    }
-
- 
-    .student-info {
-      color: black;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-
-
-    .book-cover {
-      width: 70vmin;
-      height: 90vmin; 
-      max-width: 700px;
-      max-height: 1000px;
-      border: 4px solid red;
-      padding: 4vmin;
-      box-sizing: border-box;
-      background: linear-gradient(180deg, #2196F3, #E91E63, #FFB6C1);
-      position: relative;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
- .inner-border {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      right: 15px;
-      bottom: 15px;
-      border: 2px solid red;
-      pointer-events: none;
-    }
-
-    .section-top {
-      font-size: 20px;
-      font-weight: bold;
-      border-bottom: 1px solid white;
-      display: inline-block;
-      margin-bottom: 40px;
-    }
-
-    .title {
-      font-size: 36px;
-      font-weight: 900;
-      text-align: center;
-      line-height: 1.3;
-      letter-spacing: 1px;
-      margin-bottom: 25px;
-    }
-
-    
-    .subtitle {
-      font-size: 18px;
-      text-align: center;
-      margin-bottom: 60px;
-    }
- .bottom {
-      position: absolute;
-      bottom: 50px;
-      left: 40px;
-      right: 40px;
-    }
-
-    .bottom-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-
-    .special {
-      font-weight: bold;
-      font-size: 20px;
-      margin-bottom: 8px;
-    }
-
-    .divider {
-      height: 1px;
-      background-color: white;
-      width: 100%;
-      margin-bottom: 10px;
-    }
-
-    .author {
-      font-weight: bold;
-      font-size: 14px;
-      color: white;
-    }
-
-
-    .photo {
-      width: 120px;
-      height: 120px;
-      border: 5px solid white;
-      object-fit: cover;
-      margin-bottom: 60px;
-    }
-
-
-    .publisher {
-      position: absolute;
-      right: 40px;
-      bottom: 10px;
-      font-size: 20px;
-      font-weight: bold;
-      color: white; 
-    }
 ```
 
 ## OUTPUT:
-![alt text](<Screenshot (42)-1.png>)
+![alt text](<Screenshot (63).png>)
 
 ## RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
